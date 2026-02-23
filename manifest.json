@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Goodreads to Anna's Archive",
+  "version": "1.0",
+  "description": "Busca libros de Goodreads en Anna's Archive con un solo clic.",
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
