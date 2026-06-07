@@ -16,8 +16,8 @@ chrome.action.onClicked.addListener((tab) => {
     if (results && results[0].result) {
       const { title, author } = results[0].result;
       const query = `${title} ${author}`.replace(/\s+/g, '+');
-      const searchUrl = `https://annas-archive.li/search?&content=book_nonfiction&content=book_fiction&content=book_unknown&q=${query}`;
-      
+      const searchUrl = `https://annas-archive.pk/search?&content=book_nonfiction&content=book_fiction&content=book_unknown&q=${query}`;
+
       chrome.tabs.create({ url: searchUrl });
     }
   });
